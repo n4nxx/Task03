@@ -29,7 +29,6 @@ while (running)
             Console.Write("Enter years of experience: ");
             int.TryParse(Console.ReadLine(), out int years);
             
-            // Se crea el objeto y se añade a la lista
             teachers.Add(new Teacher(name, subject, years));
             Console.WriteLine("Teacher added successfully.");
             break;
@@ -41,7 +40,6 @@ while (running)
             }
             else
             {
-                // Se recorre la lista mostrando cada perfil
                 foreach (Teacher t in teachers)
                 {
                     t.ShowProfile();
